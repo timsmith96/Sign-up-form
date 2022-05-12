@@ -116,7 +116,7 @@ input:focus {
   padding: 15px 50px;
   border-radius: 5px;
   border: 1px solid #94a3b8;
-  background-color: #94a3b8;
+  background-color: #334155;
   color: #f8fafc;
   font-size: 1.25rem;
   font-weight: bold;
@@ -144,4 +144,57 @@ a {
 
 a:hover {
   color: #94a3b8;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr;
+    width: 100%;
+  }
+
+  .logo-banner {
+    margin-top: 100px;
+    height: 10vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-header {
+    text-align: center;
+  }
+
+  .heading-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .submit-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-control {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    height: 50vh;
+  }
+
+  .footer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
